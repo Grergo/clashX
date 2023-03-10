@@ -176,7 +176,7 @@ func clashSetupLogger() {
 	sub := log.Subscribe()
 	go func() {
 		for elm := range sub {
-			log := elm.(log.Event)
+			log := elm
 			cs := C.CString(log.Payload)
 			cl := C.CString(log.Type())
 			C.sendLogToUI(cs, cl)

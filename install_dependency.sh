@@ -3,6 +3,7 @@ set -e
 echo "Build Clash core"
 
 cd ClashX/goClash
+go mod tidy
 python3 build_clash_universal.py
 cd ../..
 
