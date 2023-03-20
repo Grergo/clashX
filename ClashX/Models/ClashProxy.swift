@@ -21,6 +21,7 @@ enum ClashProxyType: String, Codable {
     case socks5 = "Socks5"
     case http = "Http"
     case vmess = "Vmess"
+    case vless = "Vless"
     case snell = "Snell"
     case trojan = "Trojan"
     case relay = "Relay"
